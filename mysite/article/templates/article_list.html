@@ -1,0 +1,12 @@
+
+{% for b in blocks %}
+<div class='panel panel-default'>
+	<div class='panel-heading'>
+		<a herf='/article/list/{{ b.id }}'>{{ article.title }}</a>
+		<span class='pull-right'>{{ b.manage }}</span>	
+	</div>
+	<div class="panel-body">
+    {{ b.desc }}
+	</div>
+</div>
+{% endfor %}

@@ -1,0 +1,7 @@
+€}q(U*article.migrations.0002_auto_20160930_1945q]qU	MigrationqaUmysite.settingsq]q(U	TEMPLATESqUAUTH_PASSWORD_VALIDATORSqUUSE_L10Nq	UUSE_TZq
+U
+MIDDLEWAREqULANGUAGE_CODEqU	TIME_ZONEqU
+STATIC_URLqUUSE_I18NqUROOT_URLCONFqUWSGI_APPLICATIONqU	DATABASESqUDEBUGqUALLOWED_HOSTSqU
+SECRET_KEYqUBASE_DIRqUSTATICFILES_DIRSqUINSTALLED_APPSqeUarticle.migrations.0001_initialq]qhaUmanageq]qUarticle.appsq]qUArticleConfigqaUmysite.urlsq ]q!Uurlpatternsq"aUarticle.urlsq#]q$h"aUarticle.adminq%]q&UArticleAdminq'aUarticle.migrationsq(]q)U
+migrationsq*]q+U"migrations.0003_auto_20160827_1718q,]q-haU"migrations.0002_auto_20160826_1849q.]q/haUarticle.testsq0]q1Uarticle.modelsq2]q3UArticleq4aUmysiteq5]q6Uviewsq7]q8Uindexq9aUmodelsq:]q;UBlockq<aUmysite.wsgiq=]q>Uapplicationq?aUmigrations.0001_initialq@]qAhaUarticleqB]qCUadminqD]qEU
+BlockAdminqFaUarticle.viewsqG]qHUarticle_listqIaUmigrations.0004_block_statusqJ]qKhau.
