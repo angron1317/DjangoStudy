@@ -1,14 +1,23 @@
-from django.shortcuts import render
-from django.views.generic import View
+from django.shortcuts import render,redirect
+from django.views.generic import View,DetailView
 
 from block.models import Block
 from .models import Article
+from .forms import ArticleForm
+from utils.paginator import paginate_queryset
 
 def article_list(request,block_id):
     block_id=int(block_id)
     block=Block.objects.get(id=block_id)
     articles_objs=Article.objects.filter(block=block,status=0).order_by("-id")
-    return render(request,'article_list.html',{"articles":articles_objs,"b":block})
+
+    page_no = int(request.GET.get("page_no", "1"))
+    all_articles = Article.objects.filter(block=block,status=0).order_by("-id")
+    page_articles, pagination_data = paginate_queryset(all_articles, page_no)
+
+#    return render(request,'article_list.html',{"articles":articles_objs,"b":block})
+    return render(request, "article_list.html", {"articles": page_articles,
+                                                  "b": block, "pagination_data": pagination_data})
 #block=block 也可以写filter(block__id=block_id)...两个下划线
 
 #filter(block=block,status=0)...中逗号，表明与逻辑，等同and。
@@ -43,3 +52,18 @@ class ArticleCreateView(View):
             return redirect("/article/list/%s" % self.block_id)
         else:
             return render(request, self.template_name, {"b": self.block, "form": form})
+
+class ArticleDetailView(DetailView):
+    model=Article
+    template_name='article_detail.html'
+    context_object_name='article'
+
+#    def get_context_data(self, **kwargs):
+#        context = super().get_context_data(**kwargs)
+#        page_no = int(self.request.GET.get("page_no", "1"))
+#        all_comments = Comment.normal_objects.filter(article=context["article"])
+#        comments, pagination_data = paginate_queryset(all_comments,
+#                page_no, cnt_per_page=3)
+#        context['comments'] = comments
+#        context['pagination_data'] = pagination_data
+#        return context

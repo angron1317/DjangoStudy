@@ -1,10 +1,12 @@
 from django.db import models
 
 from block.models import Block
+from django.contrib.auth.models import User
 
 # Create your models here.
 class Article(models.Model):
     #block_id=models.IntegerField("板块ID")
+    owner=models.ForeignKey(User,verbose_name="作者")
     block=models.ForeignKey(Block,verbose_name="板块ID")
     title=models.CharField("板块名称",max_length=100)
     content=models.CharField("板块描述",max_length=10000)
