@@ -2,8 +2,9 @@
 U
 MIDDLEWAREqULANGUAGE_CODEqU	TIME_ZONEqU
 STATIC_URLqUUSE_I18NqUROOT_URLCONFqUWSGI_APPLICATIONqU	DATABASESqUDEBUGqUALLOWED_HOSTSqU
-SECRET_KEYqUBASE_DIRqUSTATICFILES_DIRSqUINSTALLED_APPSqeUarticle.migrations.0001_initialq]qhaUmanageq]qUarticle.appsq]qUArticleAPPConfigqaUmysite.urlsq ]q!Uurlpatternsq"aUarticle.modelsq#]q$UArticleq%aUarticle.urlsq&]q'h"aUarticle.adminq(]q)UArticleAdminq*aU	paginatorq+]q,Upaginate_querysetq-aUarticle.migrationsq.]q/U
-migrationsq0]q1U"migrations.0003_auto_20160827_1718q2]q3haU"migrations.0002_auto_20160826_1849q4]q5haU%article.migrations.0003_article_ownerq6]q7haUarticle.testsq8]q9Uarticle.formsq:]q;UArticleFormq<aUmysiteq=]q>Uviewsq?]q@UindexqAaUmodelsqB]qCUBlockqDaUmysite.wsgiqE]qFUapplicationqGaUmigrations.0001_initialqH]qIhaUarticleqJ]qKUadminqL]qMU
-BlockAdminqNaUmysite.secretqO]qP(UEMAIL_HOST_PASSWORDqQUEMAIL_USE_SSLqRUDEFAULT_FROM_EMAILqSU
-EMAIL_PORTqTUEMAIL_HOST_USERqUU
-EMAIL_HOSTqVeUarticle.viewsqW]qX(Uarticle_listqYUArticleCreateViewqZUArticleDetailViewq[eUmigrations.0004_block_statusq\]q]hau.
+SECRET_KEYqUBASE_DIRqUSTATICFILES_DIRSqUINSTALLED_APPSqeUarticle.migrations.0001_initialq]qhaUmanageq]qUarticle.appsq]qUArticleAPPConfigqaUmysite.urlsq ]q!Uurlpatternsq"aUarticle.modelsq#]q$UArticleq%aUarticle.urlsq&]q'h"aUarticle.adminq(]q)UArticleAdminq*aUusercenter.viewsq+]q,Uactivateq-aUusercenter.adminq.]q/U	paginatorq0]q1Upaginate_querysetq2aUarticle.migrationsq3]q4U
+migrationsq5]q6U"migrations.0003_auto_20160827_1718q7]q8haU"usercenter.migrations.0001_initialq9]q:haU"migrations.0002_auto_20160826_1849q;]q<haU%article.migrations.0003_article_ownerq=]q>haUarticle.formsq?]q@UArticleFormqAaUmysiteqB]qCUviewsqD]qE(UindexqFUregisterqGeUmodelsqH]qIUBlockqJaUmysite.wsgiqK]qLUapplicationqMaUmigrations.0001_initialqN]qOhaUarticle.testsqP]qQUarticleqR]qSUusercenter.appsqT]qUUUsercenterConfigqVaUadminqW]qXU
+BlockAdminqYaUusercenter.migrationsqZ]q[Uusercenter.testsq\]q]U
+usercenterq^]q_Umysite.secretq`]qa(UEMAIL_HOST_PASSWORDqbUEMAIL_USE_SSLqcUDEFAULT_FROM_EMAILqdU
+EMAIL_PORTqeUEMAIL_HOST_USERqfU
+EMAIL_HOSTqgeUusercenter.modelsqh]qi(UActivateCodeqjUUserProfileqkeUarticle.viewsql]qm(Uarticle_listqnUArticleCreateViewqoUArticleDetailViewqpeUmigrations.0004_block_statusqq]qrhau.
