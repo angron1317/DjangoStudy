@@ -26,5 +26,6 @@ urlpatterns = [
     #Django1.10不再需要
     url(r'^register$',views.register),
     url(r'^activate/(?P<code>\w+)$',activate),
+    url(r'^accounts/',include('django.contrib.auth.urls')),
     url(r'^$',views.index),
 ]

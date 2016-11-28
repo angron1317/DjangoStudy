@@ -62,7 +62,7 @@ def register(request):
             send_mail(subject='[Python部落论坛]激活邮件',
                       message='点击链接激活: %s' % activate_link,
                       html_message=activate_email,
-                      from_email='majia1317@163.com',
+                      from_email='666@163.com', #需要使用正常的邮箱地址，激活码也需要修改
                       recipient_list=[email],
                       fail_silently=False)
         else:
